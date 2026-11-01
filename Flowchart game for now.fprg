@@ -1,0 +1,256 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Flowchart game for now"/>
+        <attribute name="authors" value="Admin"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2569-11-01 09:57:57 PM"/>
+        <attribute name="created" value="QWRtaW47QURNSU47MjU2OS0xMS0wMTswOToyMzo0NyBQTTsyMTQ0"/>
+        <attribute name="edited" value="QWRtaW47QURNSU47MjU2OS0xMS0wMTswOTo1Nzo1NyBQTTsxOzIyNjA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <call expression="menu1()"/>
+        </body>
+    </function>
+    <function name="menu1" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="choice" type="Integer" array="False" size=""/>
+            <output expression="&quot;=== My Visual Novel ===&quot;" newline="True"/>
+            <output expression="&quot;1. Start&quot;" newline="True"/>
+            <output expression="&quot;2. Leave&quot;" newline="True"/>
+            <input variable="choice"/>
+            <if expression="choice == 1">
+                <then>
+                    <call expression="showScene1()"/>
+                </then>
+                <else>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                    <call expression="showERROR1()"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="showERROR1" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;&quot;" newline="True"/>
+            <call expression="menu1()"/>
+        </body>
+    </function>
+    <function name="showScene1" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="choice" type="Integer" array="False" size=""/>
+            <output expression="&quot;=== DAY 1 ===&quot;" newline="True"/>
+            <output expression="&quot;Mako:oh.. Hello there!&quot;" newline="True"/>
+            <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+            <output expression="&quot;1. Say hello&quot;" newline="True"/>
+            <output expression="&quot;2. Walk away&quot;" newline="True"/>
+            <output expression="&quot;Choose: &quot;" newline="True"/>
+            <input variable="choice"/>
+            <if expression="choice == 1">
+                <then>
+                    <output expression="&quot;=== DAY 1 ===&quot;" newline="True"/>
+                    <output expression="&quot;Maka: you must be a new one, right?&quot;" newline="True"/>
+                    <output expression="&quot;Maka: Nice to meet ya!&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                    <call expression="showScene2()"/>
+                </then>
+                <else>
+                    <output expression="&quot;=== DAY 1 ===&quot;" newline="True"/>
+                    <output expression="&quot;Kuro: Oh... seem like he don't even care you, Mako&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                    <call expression="showScene2X()"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="showScene2" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="choice" type="Integer" array="False" size=""/>
+            <output expression="&quot;=== DAY 2 ===&quot;" newline="True"/>
+            <output expression="&quot;Mako:Text&quot;" newline="True"/>
+            <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+            <output expression="&quot;1. ofc&quot;" newline="True"/>
+            <output expression="&quot;2. later&quot;" newline="True"/>
+            <output expression="&quot;Choose: &quot;" newline="True"/>
+            <input variable="choice"/>
+            <if expression="choice == 1">
+                <then>
+                    <output expression="&quot;=== DAY 2 ===&quot;" newline="True"/>
+                    <output expression="&quot;Maka: Girl: Yay! Thank you!&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                    <call expression="showScene3()"/>
+                </then>
+                <else>
+                    <output expression="&quot;=== DAY 2 ===&quot;" newline="True"/>
+                    <output expression="&quot;Girl: That's okay&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                    <call expression="showScene3()"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="showScene2X" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="choice" type="Integer" array="False" size=""/>
+            <output expression="&quot;=== DAY 2 ===&quot;" newline="True"/>
+            <output expression="&quot;Mako:hey Text&quot;" newline="True"/>
+            <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+            <output expression="&quot;1. ....&quot;" newline="True"/>
+            <output expression="&quot;2. WHO&quot;" newline="True"/>
+            <output expression="&quot;Choose: &quot;" newline="True"/>
+            <input variable="choice"/>
+            <if expression="choice == 1">
+                <then>
+                    <output expression="&quot;=== DAY 2 ===&quot;" newline="True"/>
+                    <output expression="&quot;Maka: later&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                    <call expression="showScene3X()"/>
+                </then>
+                <else>
+                    <output expression="&quot;=== DAY 2 ===&quot;" newline="True"/>
+                    <output expression="&quot;Mako:...&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                    <call expression="showScene3D()"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="showScene3" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="choice" type="Integer" array="False" size=""/>
+            <output expression="&quot;=== DAY 3 ===&quot;" newline="True"/>
+            <output expression="&quot;Mako:EAT what&quot;" newline="True"/>
+            <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+            <output expression="&quot;1. u&quot;" newline="True"/>
+            <output expression="&quot;2. &#3617;&#3634;&#3617;&#3656;&#3634;&quot;" newline="True"/>
+            <output expression="&quot;Choose: &quot;" newline="True"/>
+            <input variable="choice"/>
+            <if expression="choice == 1">
+                <then>
+                    <output expression="&quot;=== DAY 3 ===&quot;" newline="True"/>
+                    <output expression="&quot;Maka: eh&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                    <call expression="showScene4L()"/>
+                </then>
+                <else>
+                    <output expression="&quot;=== DAY 3 ===&quot;" newline="True"/>
+                    <output expression="&quot;Kuro: i love too&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                    <call expression="showScene4()"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="showScene3D" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="choice" type="Integer" array="False" size=""/>
+            <output expression="&quot;=== DAY 3 ===&quot;" newline="True"/>
+            <output expression="&quot;Mako:E A T WHAT&quot;" newline="True"/>
+            <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+            <output expression="&quot;1. U&quot;" newline="True"/>
+            <output expression="&quot;2. ME&quot;" newline="True"/>
+            <output expression="&quot;Choose: &quot;" newline="True"/>
+            <input variable="choice"/>
+            <if expression="choice == 1">
+                <then>
+                    <output expression="&quot;=== DAY3 ===&quot;" newline="True"/>
+                    <output expression="&quot;Maka: ...&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;=== DAY 3 ===&quot;" newline="True"/>
+                    <output expression="&quot;Kuro: O###k##&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                    <call expression="showScene4END2()"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="showScene3X" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="choice" type="Integer" array="False" size=""/>
+            <output expression="&quot;=== DAY3 ===&quot;" newline="True"/>
+            <output expression="&quot;Mako:EAT WHAT&quot;" newline="True"/>
+            <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+            <output expression="&quot;1. rice&quot;" newline="True"/>
+            <output expression="&quot;2. noodle&quot;" newline="True"/>
+            <output expression="&quot;Choose: &quot;" newline="True"/>
+            <input variable="choice"/>
+            <if expression="choice == 1">
+                <then>
+                    <output expression="&quot;=== DAY 3 ===&quot;" newline="True"/>
+                    <output expression="&quot;Maka: sound good&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;=== DAY 3 ===&quot;" newline="True"/>
+                    <output expression="&quot;Kuro: i love noodles too&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="showScene4" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="choice" type="Integer" array="False" size=""/>
+            <output expression="&quot;=== DAY 4 ===&quot;" newline="True"/>
+            <output expression="&quot;Mako:together?&quot;" newline="True"/>
+            <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+            <output expression="&quot;1. k&quot;" newline="True"/>
+            <output expression="&quot;2. nope&quot;" newline="True"/>
+            <output expression="&quot;Choose: &quot;" newline="True"/>
+            <input variable="choice"/>
+            <if expression="choice == 1">
+                <then>
+                    <output expression="&quot;=== DAY 4 ===&quot;" newline="True"/>
+                    <output expression="&quot;Maka: nice&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                    <call expression="showScene5END3()"/>
+                </then>
+                <else>
+                    <output expression="&quot;=== DAY 4 ===&quot;" newline="True"/>
+                    <output expression="&quot;Kuro: see tomorrow&quot;" newline="True"/>
+                    <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+                    <call expression="showScene5END1()"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="showScene4END2" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;=== END ===&quot;" newline="True"/>
+            <output expression="&quot;=== TASTY ===&quot;" newline="True"/>
+            <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+            <call expression="menu1()"/>
+        </body>
+    </function>
+    <function name="showScene4L" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+    <function name="showScene5" type="None" variable="">
+        <parameters/>
+        <body/>
+    </function>
+    <function name="showScene5END1" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;=== DAY5 ===&quot;" newline="True"/>
+            <output expression="&quot;ENDING I : just one day&quot;" newline="True"/>
+            <output expression="&quot;&#3616;&#3634;&#3614;&quot;" newline="True"/>
+            <call expression="menu1()"/>
+        </body>
+    </function>
+</flowgorithm>
